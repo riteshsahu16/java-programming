@@ -1,0 +1,18 @@
+Part1 : Java Language Fundamentals
+
+Topics finished
+Introduction to Java / Java Architechture
+Printing & reading input-output
+Programming basics: Data Types, variables, Arrays, Strings
+Control Flow : If-else, switch, looping-for, foreach, while, do-while, Nested loops
+Concepts of Classes & Objects, Methods(arbitrary no. arg.), Garbage Collection
+Constructor/Method Overloading, Access specifiers
+Keywords static, this
+*****************************************************************************************
+
+Mon : More on: Keywords-static, this, final. Numbers & Strings, Nested Classes
+Thur: Interfaces & Inheritance
+Mon : Annotations & Packages
+Thur: Generics
+
+

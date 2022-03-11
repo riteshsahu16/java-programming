@@ -1,0 +1,168 @@
+Review OOPs basics
+classes
+Objects
+Access  Specifiers
+Static 
+Final
+
+
+Objects: stores its states in fields & exposes its behaviour through methods 
+Class : it is the blueprint from which individual Objects are created.
+**************************************************************************************************************
+
+classes
+state/fields/attributes
+methods/functions/behaviour
+
+Constructor : early initialization
+
+Inheritance: inheriting parents attributes & behaviour
+public class Man extends Human{}
+
+class declaration
+class MyClass extends MySuperClass implements YourInterface {
+    // field, constructor, and
+    // method declarations
+}
+
+methods
+method overlaoding
+
+Constructor
+Types:
+1. Defualt or parameterless constructor
+2. Parameterized constructor
+3. Copy Constructor
+
+
+Implicit Constructor / defualt constructor / parameterless constructor
+- they are mandotarily public
+
+Explicit Constructor
+- parameterless or parameterized
+
+
+Copy Constructor
+If we want to create multiple instances with the same value
+In copy constructor the constructor takes the same class as the parameter to it.
+
+
+Static Constructor
+if a constructor is Explicitly declared by using static modifier.
+Non-static or Instantaneous constructor
+
+Constructor overlaoding
+
+*IMP: The default constructor(provided by compiler) will call the no-arguement constructor of the superclass. In this situation,
+compiler will complain if the superclass doesn't have a no-arguement constructor so you must verify it does. If your class has no Explicit superclass,
+then it has an implicit superclass of Object, which does have a no-arguement constructor.
+
+methods
+passing arbitrary no. of arguements - varargs
+public int Add(Numbers... args)
+
+Objects
+declaration : MyClass cs
+instantiation : creating objects //Memory allocate
+initialization : initalize
+
+Garbage Collection
+Condition:
+1. out of scope
+2. Explicitly set value to NULL
+
+
+A method returns to the code that invoked it when it ::
+completes all the statements in the method,
+reaches a return statement, or
+throws an exception
+
+*covariant return type* : returning sub-class of the Class defined originally.
+
+this keyword:
+
+this with class :
+- points to current Object
+
+this with constructor:
+- Explicit Constructor Invokation : use the this keyword to call another constructor in the same class
+
+
+Access modifier
+Two Levels 
+    Top Level - public or package-private(no-modifier)
+    Member Level - public, private, protected or package-private
+
+Access Levels
+
+Modifier	Class	Package	    Subclass	World
+public	        Y	    Y	       Y     	Y
+protected	    Y	    Y	       Y    	N
+no modifier	    Y	    Y	       N    	N
+private	        Y	    N	       N    	N
+
+
+methods
+static : class variable : only one instance
+Instance methods can access instance variables and instance methods directly.
+Instance methods can access class variables and class methods directly.
+Class methods can access class variables and class methods directly.
+Class methods cannot access instance variables or instance methods directly—they must use an object reference.
+Also, class methods cannot use the this keyword as there is no instance for this to refer to.
+
+Constants
+"final" modifier indicates that the variable is constant (value won't change)
+
+If a primitive type or a string is defined as a constant and the value is known at compile time,
+ the compiler replaces the constant name everywhere in the code with its value.
+ This is called a "compile-time constant"
+
+
+initialization
+
+Initializing Class variables
+Static initialization block
+static { }
+
+Initializing instance variables
+Initializer blocks for instance variables look just like static initializer blocks, but without the static keyword:
+{    // whatever code is needed for initialization goes here }
+
+            
+The Java compiler copies initializer blocks into every constructor.
+Therefore, this approach can be used to share a block of code between multiple constructors.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

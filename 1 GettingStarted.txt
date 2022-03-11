@@ -1,0 +1,107 @@
+Java Technology
+	About
+		- Java technology is both a programming language and a plat form
+		- Java Programming Language {High level}
+			: Simple
+			: Object Oriented
+			: Distributed
+			: Arcitechture neutral
+			: High Performance
+			: Robust
+			: Secure
+			: Dynamic
+			: Multi Threaded
+
+		- Steps
+			: Source code written with .java extension
+			: Src code is then compiled into .class files by the javac compiler.
+			: .class files contained bytecodes the machine language of Java Virtual Machine (JVM).
+			: java laucher tool then runs applications with an instance of the JVM.
+			: Cross-Platform
+		- Java Platform
+			: A platform is the hardware or software environment in which a program runs.
+			: The java platform has two components
+				- the Java Virtual Machine (JVM)
+				- the Java Application Programming Interface (API)
+					:The API is a large collection of ready-made software components that provides many usefull capabilites.
+					: It is grouped into libraries of related classes & interfaces; these libraries are known as packages.
+					
+		
+	What can Java Do?
+		- Development Tools
+			: provides everything you'll need for compiling, monitoring, debugging and documenting your application.
+		- API 
+			: it spans everything from basic objects to networking & security to xml generation & database access.
+		- User Interface Tools 
+			: JavaFX, Swing & Java2D to create GUI
+		- Integration Libraries 
+			: libraries such as Java IDL API, JDBC API, JNDI API, Java RMI-IIOP technology enables database access and manipulation of remote objects
+
+Hello World
+	Demo
+/* First Program */
+class HelloWorldApp {
+    public static void main(String[] args) {
+        System.out.println("Hello World!"); // Display the string.
+    }
+}
+
+	Comments 
+	//  s;jkldf 
+	/* 
+	 */	 
+	class definition
+		- class name { }
+	main Method
+		- public static void main(String[] args)
+		- can write public & static in either order
+		- arguement name can be anythin.
+		- This array is mechanism to pass information to the application called Commandline Arguements. 
+			eg. java HelloWorldApp arg1 arg2	
+		- 
+	println
+		- prints the string
+
+*******************************************************************************************************************************************
+Question 1: When you compile a program written in the Java programming language, the compiler converts the human-readable source file into platform-independent code that a Java Virtual Machine can understand. What is this platform-independent code called?
+
+Question 2: Which of the following is not a valid comment:
+
+a. /** comment */
+b. /* comment */
+c. /* comment
+d. // comment
+
+Question 3: What is the first thing you should check if you see the following error at runtime:
+
+Exception in thread "main" java.lang.NoClassDefFoundError:
+HelloWorldApp.java.
+Question 4: What is the correct signature of the main method?
+
+Question 5: When declaring the main method, which modifier must come first, public or static?
+
+Question 6: What parameters does the main method define?
+
+
+****************************************************************************************************************************************************
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,6 @@
+Value Vs Reference types
+1. Default value & NULL
+2. Reference types are stored in heap while primitive value are stored in stack memory.
+3. Assignment
+4. Equality : == and .equals
+5. Memory Consumption

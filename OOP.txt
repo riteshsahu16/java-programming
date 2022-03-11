@@ -1,0 +1,111 @@
+Constructors
+
+defualt constructor calls no arg constructor of super class. if there is no superclass then no arg constructor of Object class is called.
+
+Arbitrary no. of arguements
+fun(Type... list)
+the method can be called by any no. of arguement including none.
+
+**************************************************************************************************************************************************
+
+Objects
+Declaration
+Instantiation new
+Initialization
+
+*****************************************************************************************************************************************************
+Garbage collections
+The Java runtime environment deletes objects when it determines that they are no longer being used.
+
+Conditions for Garbage collections
+1. When there is no reference of variable (out of scope)
+2. Setting variable value to NULL.
+
+****************************************************************************************************************************************************
+A method returns to the code that invoked it when it
+1. completes all the statements in the method
+2. reaches a return statement
+3. throws an exception
+whichever occurs first.
+
+covariant return type:
+Returning a Class or Interface
+ type of the returned object must be either a subclass of, or the exact class of, the return type.
+
+*********************************************************************************************************************************
+this - keyword
+Explicit Constructor Invocation
+	: From within a constructor, you can also use the this keyword to call another constructor in the same class.
+
+If present, the invocation of another constructor must be the first line in the constructor.
+***********************************************************************************************************************************
+Access Specifiers
+Top level - public(everywhere), no modifier(within package)
+Member level -public(everywhere), private(within class), protected(private + inc. sub class)
+************************************************************************************************************************************
+Access Levels
+Modifier	Class	Package	   Subclass	World
+public		Y	Y		Y	Y
+protected	Y	Y		Y	N
+no modifier`	Y	Y		N	N
+private		Y	N		N	N
+
+**************************************************************************************************************************************
+Interface or Classes
+
+Package :
+related classes & interface
+
+Segments in Memory
+Code/text
+Data
+Stack local variable, local class, call stack
+Heap new
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

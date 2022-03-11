@@ -1,0 +1,49 @@
+
+Interfaces
+-Contract
+- In Java, Interfaces is a reference type that only contains constants, method signatures, default methods, static Methods, and nested types.
+- Method bodies exists only for defualt methods and static methods.
+- Interfaces cannot be instantiated - They can only be implemented by class or extended by other interfaces.
+
+eg.
+
+public interface Teacher
+{
+	void introduce();
+	void teach();
+}
+
+public class John implements ITeacher
+{
+	// Implementation of all methods of ITeacher interface
+	
+}
+
+The body of interface can contain abstract methods, default methods and static Methods.
+
+An abstract method within an interface is followed a semicolon, but no braces {Does not contain any implementation}
+
+Default methods are defined with the default modifier and static methods with static keywords
+
+All abstract, default and static methods in an interfaces are implicitly public, so you can omit the public modifier
+
+An Interface can contain constants declarations. All constants 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

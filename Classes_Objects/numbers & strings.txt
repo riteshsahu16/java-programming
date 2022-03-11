@@ -1,0 +1,267 @@
+Numbers & Strings
+
+************************************************************************************************************
+Number Class
+
+All of the numeric wrapper classes are subclasses of the abstract class Number
+
+
+Primitive type	    Wrapper class
+boolean	            Boolean
+byte	            Byte
+char	            Character [Not included]
+float	            Float
+int	                Integer
+long	            Long
+short	            Short
+double	            Double  
+
+AutoBoxing & UnBoxing
+
+AutoBoxing : converting a primitive value(eg. int) into Object of corresponding wrapper class (Integer) is called autoboxing.
+Condition:
+    - When a primitive value is passed as a parameter to a method that expects an Object of corresponding wrapper class.
+    - Assigned to a variable of the corresponding wrapper class
+eg. Integer i = 5;
+
+UnBoxing: converting an Object of wrapper class(Integer) to primitive(int) value is called UnBoxing.
+Condition:
+    - When an Object is passed as a parameter  that expects a corresponding primitive value
+    - Assigned to a variable of the corresponding primitive type.
+eg. int i = new Integer(5);
+
+Three Reasons to Use Number Object:
+1. As an arguement of a method that expects an Object.
+2. To use constants defined by the class. (eg. MIN_VALUE and Max_Value)
+3. To use class methods for converting values to & from other primitive types.
+
+Some of methods implemented by all subclasses of Number
+int intValue()
+byte byteValue()
+double doubleValue()
+
+int compareTo(Integer anotherInteger)
+int compareTo(Double anotherDouble)
+
+boolean equals(Object obj) 
+
+Conversion Methods ***
+static Integer decode(String s)
+static Integer parseInt(String s)
+
+String toString()
+Static Integer valueOf(int i)
+Static Integer valueOf(String s)
+
+
+
+Formatting Numeric Print Output0
+public PrintStream format(String format, Object... args) [varargs]
+
+
+
+
+System.out.format("%d %f %s", integer, floats, strings)
+
+eg>
+      long n = 461012;
+      System.out.format("%d%n", n);      //  -->  "461012"
+      System.out.format("%08d%n", n);    //  -->  "00461012"
+      System.out.format("%+8d%n", n);    //  -->  " +461012"
+      System.out.format("%,8d%n", n);    // -->  " 461,012"
+      System.out.format("%+,8d%n%n", n); //  -->  "+461,012"
+      double pi = Math.PI;
+      System.out.format("%f%n", pi);       // -->  "3.141593"
+      System.out.format("%.3f%n", pi);     // -->  "3.142"
+      System.out.format("%10.3f%n", pi);   // -->  "     3.142"
+      System.out.format("%-10.3f%n", pi);  // -->  "3.142"
+      System.out.format(Locale.FRANCE, "%-10.4f%n%n", pi); // -->  "3,1416"
+      
+      Calendar c = Calendar.getInstance();
+      System.out.format("%tB %te, %tY%n", c, c, c); // -->  "May 29, 2006"
+      System.out.format("%tl:%tM %tp%n", c, c, c);  // -->  "2:34 am"
+      System.out.format("%tD%n", c);    // -->  "05/29/06"
+
+
+Math Class
+[static import primer : import static java.lang.Math.*]
+
+abs()
+ceil()
+floor()
+round()
+min()
+max()
+exp()
+log()
+pow()
+sqrt()
+sin()
+cos()
+tan()
+****************************************************************************************************************
+
+
+Character
+
+eg> 
+char ch = 'a'; 
+// Unicode for uppercase Greek omega character
+char uniChar = '\u03A9';
+// an array of chars
+char[] charArray = { 'a', 'b', 'c', 'd', 'e' };
+
+Character wrapper class
+
+boolean isLetter(char ch)
+boolean isDigit(char ch)
+boolean isWhitespace(char ch)
+boolean isLowerCase(char ch)
+boolean isUpperCase(char ch)
+
+char toUpperCase(char ch)
+char toLowerCase(char ch)
+
+toString(char ch)
+
+Escape Sequences
+\t \n \r
+****************************************************************************************************************
+
+Strings
+
+str.length()
+str.charAt()
+str.concat(str2)
+
+Creating format strings
+
+System.out.printf("percentage %f", 33.3);
+String str = String.format("percentage %d", 33.3);
+
+Number - String Conversions
+
+float a = parseFloat("33.3");
+String str = Float.valueOf(42.5);
+str = Integer.toString(i);
+
+String Manipulations
+
+--Substrings--
+Signature : no. of arg. type of arg'
+
+String substring(int startIndex);
+String substring(int startIndex, int endIndex);
+
+String str = "Ritesh";
+String new = str.substring(3)
+
+String trim()
+String toLowerCase()
+String toUpperCase()
+
+
+String[] split(String regex)
+String[] split(String regex, int limit)
+
+
+int indexOf(int ch)
+int lastIndexOf(int ch)
+
+int indexOf(String str, int fromIndex)
+int lastIndexOf(String str, int fromIndex)
+
+boolean contains(CharSequence s)
+if 'r' in "ritesh" : true // python
+
+*CharSequence is  interface  implemented by  String class.*
+
+String replace(char oldChar, char newChar)
+String replaceAll(String regex, String replacement)
+
+
+--Comaparing strings with Substrings--
+
+boolean endsWith(String suffix)
+boolean startsWith(String prefix)
+
+int compareTo(String anotherString) // case sensitive
+int compareToIgnoreCase(String str) // case in-sensitive
+boolean equals(Object anObject)
+boolean equalsIgnoreCase(String anotherString)
+
+
+*** String Builder Class ***
+Efficiency
+heavy operating
+
+Creating strings
+StringBuilder() //16 elements
+StringBuilder(String cs) // len(cs) + 16 extra
+StringBuilder(int initCapacity) // empty string with specified initial initCapacity
+
+eg. StringBuilder sb = new StringBuilder();
+sb.append("hello"); //length=5 with initialcapacity =16
+
+StringBuilder delete(int start, int end);
+StringBuilder insert(int offset, String s);
+
+StringBuilder reverse();
+StringBuilder replace(int start, int end, String s);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
