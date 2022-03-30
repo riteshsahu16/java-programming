@@ -133,6 +133,55 @@ The Java compiler copies initializer blocks into every constructor.
 Therefore, this approach can be used to share a block of code between multiple constructors.
 
 
+A final method cannot be overridden in a subclass.
+class Whatever {
+    private varType myVar = initializeInstanceVariable();
+    protected final varType initializeInstanceVariable() {
+        // initialization code goes here
+    }
+}
+
+********************************************************************************************************************************
+Nested Class
+
+The Java programming language allows you to define a class within another class. 
+
+Nested classes are divided into two categories: non-static and static. 
+Non-static nested classes are called inner classes. 
+Nested classes that are declared static are called static nested classes.
+
+class OuterClass {
+    ...
+    class InnerClass {
+        ...
+    }
+    static class StaticNestedClass {
+        ...
+    }
+}
+
+
+Need of Nested Class
+- It is a way of logically grouping classes that are only used in one place:
+- It increases encapsulation
+- It can lead to more readable and maintainable code
+
+* Because an inner class is associated with an instance, it cannot define any static members itself.
+Objects that are instances of an inner class exist within an instance of the outer class.
+
+OuterClass outerObject = new OuterClass();
+OuterClass.InnerClass innerObject = outerObject.new InnerClass();
+
+
+
+
+
+
+
+
+
+
+
 
 
 
